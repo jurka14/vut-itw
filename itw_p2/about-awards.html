@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <title>John Jones</title>
+    <link rel="stylesheet" type="text/css" href="itw2.css">
+    <script>
+        function toggle() {
+            var x = document.getElementById("navbar");
+            var y = document.getElementById("navbar_about");
+            if (x.style.display === "block")
+            {
+                x.style.display = "none";
+                y.style.display = "none";
+            } 
+            else
+            {
+                x.style.display = "block";
+                y.style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body id="page-top">
+<div id="main">
+
+    <header>
+        <div class="content">
+            <a href="http://xjurka08.aspfree.cz/"><h2>John Jones</h2></a>
+            <img id="icon" src="icon.svg" alt="icon" onclick="toggle()">
+        </div>
+    </header>
+    <nav id="navbar">
+    <div class="content">
+        <a href="index.html">Home</a>
+        <a href="contacts.html">Contacts</a>
+        <a class="active" href="about.html">About me</a>
+    </div>
+    </nav>
+    <nav id="navbar_about">
+    <div class="content">
+        <a href="about.html">Education</a>
+        <a class="about_active" href="about-awards.html">Awards</a>
+    </div>
+    </nav>
+
+    <div id="about-content">
+
+    <img id="profile" src="profile.jpg" alt="Profile image.">
+    
+    <p>
+        Donec aliquet, lorem in fringilla dictum, nisl metus vestibulum nulla, 
+        luctus rutrum velit lacus vel sem. Mauris libero metus, consectetur in 
+        auctor efficitur, placerat non dui. Fusce lacinia mollis nisi, et ultrices 
+        mauris consectetur vel. Aliquam blandit nisi id enim pulvinar venenatis. 
+        Morbi vestibulum orci ac interdum venenatis. Aenean sit amet mauris venenatis, 
+        bibendum lorem id, auctor sapien. Pellentesque habitant morbi tristique 
+        senectus et netus et malesuada fames ac turpis egestas.
+    </p>
+
+    </div>
+
+    <section id="about-awards">
+    <div class="content">
+    
+        <h2>Awards</h2>
+        <ul id="awardlist">
+            <li>
+                <h3>Google Analytics Certified Developer</h3>
+            </li>
+            <li>
+                <h3>Mobile Web Specialist - Google Certification</h3>
+            </li>
+        </ul>
+
+    </div>
+    </section>
+
+
+    <footer>
+    <div class="content">
+        <p>&copy; 2020. All Rights Reserved. Designed by Vojtěch Jurka (xjurka08)</p>
+    </div>
+    </footer>
+
+</div>
+</body>
+</html>

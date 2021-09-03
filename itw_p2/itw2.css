@@ -1,0 +1,220 @@
+html {
+    width: 100%;
+    height: 100%;
+    font-family: Arial;
+    font-size: 20px;
+}
+
+#main {
+    position: relative;
+    min-height: 100vh;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    font-weight: normal;
+}
+
+body {
+    margin: 0;
+}
+
+.content {
+    padding-left: 20px;
+}
+
+#main-content {
+    padding-left: 20px;
+    padding-top: 40px;
+    padding-bottom: 200px;
+
+}
+
+#about-content {
+    padding-left: 20px;
+    padding-top: 40px;
+}
+
+#about-content p {
+    max-width: 900px;
+}
+
+#about-content:before,
+#about-content:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+#about-content:after {
+  clear: both;
+}
+
+#profile {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    float: left;
+}
+
+header {
+    background-color: #128E12;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+header a {
+    color: white;
+    display: block;
+    width: 180px;
+}
+
+#icon {
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    display: none;
+
+}
+
+#navbar {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+#navbar div{
+    background-color: #27AD27;
+    display: flex;
+}
+
+#navbar a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    vertical-align: middle;
+
+}
+
+#navbar a:hover {
+    background-color: #45BE45;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.active {
+    background-color: #45BE45;
+}
+
+.about_active {
+    background-color: #70D570;
+}
+
+#navbar_about {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 43px;
+}
+
+#navbar_about div{
+    background-color: #45BE45;
+    display: flex;
+    padding-left: 20px;
+}
+
+#navbar_about a {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
+    vertical-align: middle;
+}
+
+#navbar_about a:hover {
+    background-color: #70D570;
+}
+
+p {
+    color: grey;
+}
+
+footer{
+    background-color: #27AD27;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#about-awards {
+    padding-bottom: 100px;
+}
+
+#about-education {
+    padding-bottom: 100px;
+}
+
+footer p {
+    color: black;
+    padding-top: 30px;
+    margin: 0;
+}
+
+#edulist {
+    list-style-image: url('edu.png');
+}
+
+#awardlist {
+    list-style-image: url('award.png');
+}
+
+#phone {
+    list-style-image: url('phone.png');
+}
+
+#mail {
+    list-style-image: url('mail.png');
+}
+
+
+#main-content p {
+    max-width: 600px;
+}
+
+@media (max-width: 600px) {
+
+    #icon {
+        display: block;
+    }
+
+    #navbar, #navbar_about {
+        position: static;
+        display: none;
+    }
+
+    #navbar div, #navbar_about div {
+        display: block;
+        padding-left: 0;
+    }
+
+    #navbar div a, #navbar_about div a {
+        display: block;
+    }
+
+    .content, #main-content, #about-content {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    #navbar div, #navbar_about div {
+        padding-right: 0;
+    }
+
+    #profile {
+        width: 100%;
+    }
+}

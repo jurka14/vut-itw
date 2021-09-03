@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <title>John Jones</title>
+    <link rel="stylesheet" type="text/css" href="itw2.css">
+    <script>
+        function toggle() {
+            var x = document.getElementById("navbar");
+            var y = document.getElementById("navbar_about");
+            if (x.style.display === "block")
+            {
+                x.style.display = "none";
+                y.style.display = "none";
+            } 
+            else
+            {
+                x.style.display = "block";
+                y.style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body id="page-top">
+<div id="main">
+
+    <header>
+        <div class="content">
+            <a href="http://xjurka08.aspfree.cz/"><h2>John Jones</h2></a>
+            <img id="icon" src="icon.svg" alt="icon" onclick="toggle()">
+        </div>
+    </header>
+    <nav id="navbar">
+    <div class="content">
+        <a href="index.html">Home</a>
+        <a href="contacts.html">Contacts</a>
+        <a class="active" href="about.html">About me</a>
+    </div>
+    </nav>
+    <nav id="navbar_about">
+    <div class="content">
+        <a class="about_active" href="about.html">Education</a>
+        <a href="about-awards.html">Awards</a>
+    </div>
+    </nav>
+
+    <div id="about-content">
+
+    <img id="profile" src="profile.jpg" alt="Profile image.">
+    
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Curabitur sed massa mollis, condimentum tortor vel, auctor ex. 
+        Pellentesque non elit sed purus sagittis fringilla sit amet a tellus. 
+        Aenean bibendum nulla quam, ac luctus lacus laoreet id. 
+        Etiam aliquam velit id augue fermentum, eu interdum lectus fermentum. 
+        Praesent tincidunt velit velit, et vestibulum felis rutrum sed. 
+        Duis nisi purus, lobortis porttitor imperdiet et, viverra vel magna. 
+    </p>
+
+    </div>
+
+    <section id="about-education">
+    <div class="content">
+    
+        <h2>Education</h2>
+        <ul id="edulist">
+            <li>
+                <h3>Třebíč High School of Industry</h3>
+                <p>Graduation study, 2015-2018</p>
+            </li>
+            <li>
+                <h3>Brno University of Technology</h3>
+                <p>Bachelor's degree, 2018-2021</p>
+            </li>
+        </ul>
+    </div>
+    </section>
+    
+    <footer>
+    <div class="content">
+        <p>&copy; 2020. All Rights Reserved. Designed by Vojtěch Jurka (xjurka08)</p>
+    </div>
+    </footer>
+
+</div>
+</body>
+</html>

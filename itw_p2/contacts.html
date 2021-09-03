@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width"/>
+    <title>John Jones</title>
+    <link rel="stylesheet" type="text/css" href="itw2.css">
+    <script>
+        function toggle() {
+            var x = document.getElementById("navbar");
+            if (x.style.display === "block")
+            {
+                x.style.display = "none";
+            } 
+            else
+            {
+                x.style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body id="page-top">
+<div id="main">
+
+    <header>
+    <div class="content">
+        <a href="http://xjurka08.aspfree.cz/"><h2>John Jones</h2></a>
+        <img id="icon" src="icon.svg" alt="icon" onclick="toggle()">
+    </div>
+    </header>
+    <nav id="navbar">
+    <div class="content">
+        <a href="index.html">Home</a>
+        <a class="active" href="contacts.html">Contacts</a>
+        <a href="about.html">About me</a>
+    </div>
+    </nav>
+
+    <div id="main-content">
+
+    <ul id="contactlist">
+        <li id="phone">
+            <h3>(+420) 123 456 789</h3>
+        </li>
+        <li id="mail">
+            <h3>xjurka08@vutbr.cz</h3>
+        </li>
+    </ul>
+
+    </div>
+
+    <footer>
+    <div class="content">
+        <p>&copy; 2020. All Rights Reserved. Designed by Vojtěch Jurka (xjurka08)</p>
+    </div>
+    </footer>
+
+</div>
+</body>
+</html>
